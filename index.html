@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Hamouda Tasnim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Tasnim HAMOUDA</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#experience">Expérience</a></li>
+                    <li><a href="#formation">Formation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="accueil" class="hero">
+            <div class="container">
+                <h2>Étudiante en informatique biomédicale</h2>
+                <p>
+                    Je m’intéresse à la data science, à l’épidémiologie et aux outils numériques
+                    appliqués à la santé.
+                </p>
+                <a href="#projets" class="btn">Voir mes projets</a>
+            </div>
+        </section>
+
+        <section id="apropos" class="section">
+            <div class="container">
+                <h2>À propos</h2>
+                <p>
+                    Je suis étudiante en Master Informatique Biomédicale à l’Université Sorbonne Paris Nord.
+                    Je développe des compétences en HTML, CSS, JavaScript, Python, R et analyse de données en santé.
+                </p>
+               
+            </div>
+        </section>
+
+        <section id="projets" class="section">
+            <div class="container">
+                <h2>Projets</h2>
+
+                <div class="card">
+                    <h3>Projet SGBD (M1)</h3>
+                    <p>Création d’une base de données de gestion du système informatique d’une bibliothèque.</p>
+                    <img src="images/E_A.png"><img src="images/Commandes_SGBD.png">
+                    <p>Pour en savoir plus, visitez mon <a href="https://github.com/thornim/Data-Science-Projects/tree/main/projet_SGBD" target="_blank">GitHub</a>.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Projet de traitement des données avec R (M1)</h3>
+                    <p>Exploration et visualisation de données biomédicales avec R.</p>
+                    <img src="images/R_1.png"><img src="images/R_2.png"><img src="images/R_3.png">
+                    <p>Pour en savoir plus, visitez mon <a href="https://github.com/thornim/Data-Science-Projects/tree/main/Projet%20final" target="_blank">GitHub</a>.
+                    </p>
+                </div>
+
+                 <div class="card">
+                    <h3>Projet d'analyse exploratoire (M1)</h3>
+                    <p>Exploration et visualisation de données biomédicales avec python, notamment matplotlib et seaborn.</p>
+                    <img src="images/AE_1.png"><img src="images/AE_2.png">
+                </div>
+
+                <div class="card">
+                    <h3>Projet santé (M1)</h3>
+                    <p>Projet web lié au domaine de la santé.</p>
+                    <a href="portfolio-sante.html" class="btn">Voir le projet santé</a>
+                </div>
+
+                 <div class="card">
+                    <h3>Projet en mémoire bibliographique (L3)</h3>
+                    <p>Étude du remodelage de la chromatine.</p>
+                    <img src="images/Schema.png">
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <h2>Expérience professionnelle</h2>
+                <div class="card">
+                    <h3>Stage hôspitalier - Hôpitaux universitaires Paris Ouest</h3>
+                    <p>Découverte du pôle informatique, entretien des machines, interventions...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="formation" class="section">
+            <div class="container">
+                <h2>Formation</h2>
+                <div class="card">
+                    <h3>Master Informatique Biomédicale</h3>
+                    <p>Université Sorbonne Paris Nord.</p>
+                </div>
+                <div class="card">
+                    <h3>Licence Sciences de la vie, parcours Biologie Cellulaire et Physiologie</h3>
+                    <p>Université Sorbonne Paris Nord.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <form id="contactForm">
+                    <input type="text" id="nom" placeholder="Votre nom">
+                    <input type="email" id="email" placeholder="Votre email">
+                    <textarea id="message" placeholder="Votre message"></textarea>
+                    <button type="submit" class="btn">Envoyer</button>
+                    <p id="messageFormulaire"></p>
+                </form>
+
+                <div class="socials">
+                    <p>Email : <a href="mailto:tasnimhmd93@gmail.com"> Tasnim Hamouda</a></p>
+                    <p>Linkedin :<a href="https://www.linkedin.com/in/tasnim-hamouda-074550216"> Linkedin</a> </p>
+                    <p>GitHub : <a href="https://github.com/thornim"> Github</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p> 2026 Hamouda Tasnim - Mon portfolio</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
