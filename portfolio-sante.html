@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Santé - Journal de bord étudiant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Portfolio Santé</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="portfolio-sante.html">Projet santé</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+
+      <section class="card">
+        <h2>Journal de bord étudiant</h2>
+        <p>
+          Mini projet de l'UE technologie du web destiné au suivi 
+          des stages d’un étudiant en médecine. Après création d’un compte et connexion,
+          l’utilisateur peut enregistrer ses activités, ses observations cliniques et ses
+          commentaires personnels. Cela est ensuite enregistré et il ne manquera plus que d'ajouter les journées suivantes.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Créer un compte</h2>
+        <form id="registerForm">
+          <label for="registerNom">Nom d’utilisateur</label>
+          <input type="text" id="registerNom" placeholder="Ex : tasnim.etudiante">
+
+          <label for="registerPassword">Mot de passe</label>
+          <input type="password" id="registerPassword" placeholder="Minimum 4 caractères">
+
+          <button type="submit" class="btn">Créer le compte</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Connexion</h2>
+        <form id="loginForm">
+          <label for="loginNom">Nom d’utilisateur</label>
+          <input type="text" id="loginNom" placeholder="Votre identifiant">
+
+          <label for="loginPassword">Mot de passe</label>
+          <input type="password" id="loginPassword" placeholder="Votre mot de passe">
+
+          <button type="submit" class="btn">Se connecter</button>
+        </form>
+
+        <p id="messageConnexion"></p>
+        <p>
+          Authentification simulée dans le navigateur pour un projet pédagogique.
+        </p>
+      </section>
+
+      <section id="zoneProjet" class="hidden">
+        <section class="card">
+          <h2>Espace étudiant</h2>
+          <p>
+            Bienvenue dans votre espace personnel. Vous pouvez enregistrer
+            votre journal de bord de stage.
+          </p>
+        </section>
+
+        <section class="card">
+          <h2>Ajouter une entrée au journal</h2>
+          <form id="journalForm">
+            <label for="dateStage">Date du stage</label>
+            <input type="date" id="dateStage">
+
+            <label for="serviceStage">Service</label>
+            <input type="text" id="serviceStage" placeholder="Ex : cardiologie, pédiatrie, urgences">
+
+            <label for="heuresStage">Nombre d’heures</label>
+            <input type="number" id="heuresStage" min="1" step="0.5" placeholder="Ex : 7.5">
+
+            <label for="niveauStage">Niveau de difficulté</label>
+            <select id="niveauStage">
+              <option value="">Choisir un niveau</option>
+              <option value="Faible">Faible</option>
+              <option value="Modéré">Modéré</option>
+              <option value="Élevé">Élevé</option>
+            </select>
+
+            <label for="observationStage">Observation clinique</label>
+            <textarea id="observationStage" placeholder="Décrire un cas observé, une situation ou un acte médical"></textarea>
+
+            <label for="commentaireStage">Commentaire personnel</label>
+            <textarea id="commentaireStage" placeholder="Décrire ce que vous avez appris ou ressenti"></textarea>
+
+            <label for="objectifStage">Objectif d’apprentissage</label>
+            <input type="text" id="objectifStage" placeholder="Ex : améliorer la communication avec le patient">
+
+            <button type="submit" class="btn">Enregistrer l’entrée</button>
+          </form>
+
+          <p id="messageJournal"></p>
+        </section>
+
+        <section class="card">
+          <h2>Bilan rapide</h2>
+          <p id="resumeJournal">
+            Aucune entrée n’a encore été enregistrée.
+          </p>
+        </section>
+
+        <section class="card">
+          <h2>Historique des entrées</h2>
+          <div id="etatVide">
+            Aucune entrée de stage pour le moment.
+          </div>
+          <div id="listeJournal"></div>
+        </section>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Projet de portfolio santé - HTML / CSS / JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
