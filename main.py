@@ -6,7 +6,7 @@ app = FastAPI(title="API Recommandations de santé")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://thornim.github.io/portfolio-sante"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
