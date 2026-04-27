@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recommandations de santé</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>Projet - Recommandations de santé</h1>
+      <nav>
+        <a href="index.html">Retour au portfolio</a>
+        <a href="portfolio-sante.html">Projet santé actuel</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <section class="card">
+      <h2>Rechercher des recommandations</h2>
+      <p>Cette page interroge une API réalisée avec FastAPI, comme vu dans le cours, pour afficher des recommandations selon plusieurs filtres.</p>
+
+      <div class="form-grid">
+        <div>
+          <label for="categorie">Catégorie</label>
+          <select id="categorie">
+            <option value="">Toutes</option>
+            <option value="Alimentation">Alimentation</option>
+            <option value="Activité physique">Activité physique</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="sousCategorie">Sous-catégorie</label>
+          <select id="sousCategorie">
+            <option value="">Toutes</option>
+            <option value="Fruits et légumes">Fruits et légumes</option>
+            <option value="Légumineuses">Légumineuses</option>
+            <option value="Féculents complets">Féculents complets</option>
+            <option value="Produits laitiers">Produits laitiers</option>
+            <option value="Poisson">Poisson</option>
+            <option value="Viande">Viande</option>
+            <option value="Charcuterie">Charcuterie</option>
+            <option value="Boissons">Boissons</option>
+            <option value="Boissons sucrées">Boissons sucrées</option>
+            <option value="Produits sucrés">Produits sucrés</option>
+            <option value="Sel">Sel</option>
+            <option value="Matières grasses">Matières grasses</option>
+            <option value="Marche">Marche</option>
+            <option value="Renforcement musculaire">Renforcement musculaire</option>
+            <option value="Équilibre">Équilibre</option>
+            <option value="Jeux actifs">Jeux actifs</option>
+            <option value="Sport">Sport</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="public">Public</label>
+          <select id="public">
+            <option value="">Tous</option>
+            <option value="Adultes">Adultes</option>
+            <option value="Enfants">Enfants</option>
+            <option value="Adolescents">Adolescents</option>
+            <option value="Personnes âgées">Personnes âgées</option>
+          </select>
+        </div>
+      </div>
+
+      <button id="btnRecherche" class="btn">Lancer la recherche</button>
+      <p id="message" class="message"></p>
+    </section>
+
+    <section>
+      <div id="resultats" class="resultats"></div>
+    </section>
+  </main>
+
+  <script src="recommandations.js"></script>
+</body>
+</html>
