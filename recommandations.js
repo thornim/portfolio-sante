@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var sousCategorie = document.getElementById("sousCategorie").value;
     var publicCible = document.getElementById("public").value;
 
-    var url = "https://portfolio-sante.onrender.com/";
+    var url = "https://portfolio-sante.onrender.com/api/recommandations";
     var params = [];
 
     if (categorie !== "") {
